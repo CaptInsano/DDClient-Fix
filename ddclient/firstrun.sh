@@ -5,6 +5,6 @@ if [ -f /config/ddclient.conf ]; then
   echo "Using existing config file."
 else
   echo "Creating config from template."
-  mv /etc/ddclient.conf-sample /config/ddclient.conf
+  mv /etc/ddclient/ddclient.conf-sample /config/ddclient.conf
   chown nobody:users /config/ddclient.conf
 fi
